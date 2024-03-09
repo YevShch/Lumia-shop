@@ -1,0 +1,122 @@
+body{
+  background-image: url(http://eskipaper.com/images/city-lights-wallpaper-5.jpg);
+  background-size: cover;
+  min-height: 100vh;
+  padding:4vh;
+  font-family: Raleway;
+  display:flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+h1, h2, h3{
+  font-family: Lobster;
+  margin:0;
+}
+
+h1{
+  text-align: center;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+#main{
+  background: linear-gradient(orange,white);
+  padding-bottom: 20px;
+  flex-grow:1;
+  width:70vw;
+}
+
+#cart{
+  background: linear-gradient( purple, midnightblue);
+  min-width: 25vw;
+  margin-left:5vw;
+  flex-grow:3;
+  color:white;
+  display: flex;
+  flex-direction: column;
+}
+
+#search{
+  width: calc(100% - 8px);
+  display:block;
+  border-radius:7px;
+  border:1px solid gray;
+  margin:15px 0;
+  font-family:Lobster;
+  padding:3px;
+}
+
+.product{
+  margin-bottom:5px;
+  display: flex;
+  justify-content:space-between;
+}
+
+button{
+  font-family: Raleway;
+  cursor:pointer;
+}
+
+.product img{
+  width: 30%;
+  float: right;
+  margin-bottom:10px;
+  border:1px solid gray;
+}
+
+.product.big{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background:white;
+}
+
+.product.big img{
+  width: auto;
+  height: 100vh;
+  border:0;
+}
+
+.product.big .content{
+  position:absolute;
+  top:15px;
+  left:15px;
+  z-index:2;
+}
+
+#cart ul{
+  list-style: none;
+  padding:0;
+}
+
+#cart li{
+  overflow:auto;
+  margin-bottom: 3px;
+}
+
+#cart li{
+  display: flex;
+  justify-content: space-between;
+}
+
+#cart li.total{
+  border-top:1px dashed gray;
+  padding-top:6px;
+  margin-top:6px;
+}
+
+.corners{
+  border-radius: 10px;
+  border:1px solid black;
+}
+
+.padding{
+  padding: 10px;
+}
+
+.transp{
+  opacity: 0.9;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Lumia</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <link href="https://fonts.googleapis.com/css?family=Lobster|Raleway" rel="stylesheet">
+
+  <div id="main" class="corners padding transp">
+    <h1>Lumia</h1>
+    <input type="text" id="search" placeholder="Type to search" onkeyup="search(this)">
+    <div class="product">
+      <div class="content">
+        <h2>Taklampa</h2>
+        <p>Mått Ø 25 cm, höjd 20 cm.</p>
+        <button onclick="add(this)">Köp för <span>2500</span> kr</button>
+      </div>
+      <img onclick="toggle(this)"
+        src="https://d2lhb5rbruih0q.cloudfront.net/eyJ2IjoxMDIsInQiOiJwcm9kdWN0IiwibiI6IjEyMzEwMS5qcGcifQ==/34537.jpg?q=85&w=670&h=447&dpr=2">
+    </div>
+
+    <div class="product">
+      <div class="content">
+        <h2>Bordslampa</h2>
+        <p>Mått Ø 55 cm, höjd 30 cm.</p>
+        <button onclick="add(this)">Köp för <span>6900</span> kr</button>
+      </div>
+      <img onclick="toggle(this)"
+        src="https://d2lhb5rbruih0q.cloudfront.net/eyJ2IjoxMDIsInQiOiJwcm9kdWN0IiwibiI6IjUyMzI0Ni5qcGcifQ==/107942.jpg?q=85&w=670&h=447&dpr=2">
+    </div>
+
+    <div class="product">
+      <div class="content">
+        <h2>Golvlampa</h2>
+        <p>Mått Ø 15 cm, höjd 200 cm.</p>
+        <button onclick="add(this)">Köp för <span>1780</span> kr</button>
+      </div>
+      <img onclick="toggle(this)"
+        src="https://d2lhb5rbruih0q.cloudfront.net/eyJ2IjoxMTMsInQiOiJwcm9kdWN0IiwibiI6IjEwNTQ2Ni5qcGcifQ==/5778.jpg?q=85&w=670&h=447&dpr=2">
+    </div>
+
+    <div class="product">
+      <div class="content">
+        <h2>Lampett</h2>
+        <p>Stor Lampett i tenn av Malin Appelgren. Mått Ø 29.</p>
+        <button onclick="add(this)">Köp för <span>4000</span> kr</button>
+      </div>
+      <img onclick="toggle(this)"
+        src="https://floralinnea.se/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/s/t/stortlampetttenn.jpg">
+    </div>
+
+    <div class="product">
+      <div class="content">
+        <h2>Spotlight</h2>
+        <p>Jättespotlight. Mått Ø 50 cm, höjd 170 cm.</p>
+        <button onclick="add(this)">Köp för <span>25000</span> kr</button>
+      </div>
+      <img onclick="toggle(this)"
+        src="https://www.thegreenhead.com/imgs/spotlight-metal-tripod-floor-lamp-2.jpg">
+    </div>
+
+  </div>
+
+  <div id="cart" class="corners padding transp">
+    <h3>Varukorg</h3>
+    <ul>
+      <li class="total">Total <span>0</span></li>
+    </ul>
+    <button onclick="renderCheckout()">Gå till kassan</button>
+  </div>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script src="script.js" defer></script>
+
+</body>
+
+</html>
